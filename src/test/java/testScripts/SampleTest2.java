@@ -14,9 +14,9 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import testBase.TestBase;
 
-public class SampleTest extends TestBase{
+public class SampleTest2 extends TestBase{
 	
-	WebDriver driver;
+WebDriver driver;
 	
 	
 	@BeforeClass
@@ -34,8 +34,8 @@ public class SampleTest extends TestBase{
 		
 		driver.get("https://google.com");
 		driver.manage().window().maximize();
-		System.out.println("test1");
-		boolean flag=driver.findElement(By.xpath("//input[@name='q']")).isDisplayed();
+		System.out.println("test");
+		boolean flag=driver.findElement(By.xpath("//input[@name='s']")).isDisplayed();
 		Assert.assertTrue(flag);
 	}
 	
